@@ -44,6 +44,7 @@ export class PollWorker {
       quorumPercentage: currentPoll.quorum_percentage,
       startHeight: currentPoll.start_height,
       endHeight: currentPoll.end_height,
+      title: currentPoll.title,
       description: currentPoll.description,
     };
   }

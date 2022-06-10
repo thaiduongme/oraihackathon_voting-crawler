@@ -21,5 +21,8 @@ export class Poll extends BaseEntity {
   endHeight: number;
 
   @Column()
+  title: string;
+
+  @Column()
   description: string;
 }
