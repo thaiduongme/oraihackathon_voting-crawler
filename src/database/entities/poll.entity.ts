@@ -6,23 +6,29 @@ export class Poll extends BaseEntity {
   id: number;
 
   @Column()
-  creator: string;
+  contract_address: string;
 
   @Column()
-  status: string;
+  rejected_reason: string;
 
   @Column()
-  quorumPercentage: number;
+  passed: boolean;
 
   @Column()
-  startHeight: number;
+  yes_votes: number;
 
   @Column()
-  endHeight: number;
+  no_votes: number;
 
   @Column()
-  title: string;
+  tallied_weight: number;
 
   @Column()
-  description: string;
+  staked_weight: number;
+
+  @Column()
+  poll_quorum: number;
+
+  @Column()
+  quorum: number;
 }
